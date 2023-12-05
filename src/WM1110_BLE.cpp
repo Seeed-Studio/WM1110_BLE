@@ -136,7 +136,6 @@ bool WM1110_BLE::getScanedResults(void)
 
 void WM1110_BLE::sortScanedResults(void)
 {
-    uint8_t beacon_num = 0;
     int8_t rssi_max_index = 0;
     for( uint8_t i = 0; i < scaned_beacon_num; i++ )
     {
@@ -161,7 +160,6 @@ void WM1110_BLE::sortScanedResults(void)
 bool WM1110_BLE::getScanedDatas( uint8_t *result, uint8_t *size )
 {
     uint8_t beacon_num = 0;
-    int8_t rssi_max_index = 0;
 
     if( result && size )
     {
